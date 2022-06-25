@@ -40,7 +40,7 @@ section {min-height: 60px; width: 100%;}
 .name {display: inline-block; font-size: 12px; vertical-align: bottom; padding-bottom: 5px;}
 
 .content {width: 100%;}
-.message {background: var(--main-color); border-radius: 20px; padding: 10px 15px 10px 15px; margin: 0 0 10px 65px; font-size: 13px; line-height: 18px; display: inline-block; max-width: calc(100% - 210px);}
+.message {background: var(--main-color); border-radius: 2px 20px 20px 20px; padding: 10px 15px 10px 15px; margin: 0 0 10px 65px; font-size: 13px; line-height: 18px; display: inline-block; max-width: calc(100% - 210px);}
 .message > img {width: 100%;}
 .time {display: inline-block; width: 110px; font-size: 12px; vertical-align: bottom; margin: 0 0 10px 5px; color: var(--gray-text); font-weight: bold;}
 
