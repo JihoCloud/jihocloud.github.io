@@ -83,26 +83,28 @@
             </section>
         </article>
     </main>
-    <div class="toast" style="display: none">
-        <div class="container">
-            <div class="image" v-for="index in 5" :key="index">
-                <input type="radio" @click="setImg('profile'+index)" class="imgBtn" name="image" :id="'profile'+index" :value="'profile'+index" checked>
-                <label :for="'profile'+index"><img :src="'./img/profile'+index+'.jpg'" :alt="'profile'+index"></label>
+    <footer>
+        <div class="toast" style="display: none">
+            <div class="container">
+                <div class="image" v-for="index in 5" :key="index">
+                    <input type="radio" @click="setImg('profile'+index)" class="imgBtn" name="image" :id="'profile'+index" :value="'profile'+index" checked>
+                    <label :for="'profile'+index"><img :src="'./img/profile'+index+'.jpg'" :alt="'profile'+index"></label>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="recent" onclick="goDown()">
-            최신 메시지로 이동 <i class="fa-solid fa-angle-down"></i>
-        </div>
-        <div class="textbox">
-            <form @submit="setNick">
-                <div class="nickname">
-                        <input type="text" autocomplete="off" name="nick" placeholder="애칭을 입력해주세요" maxlength="10" :value="nickname" @input="inputNick">
-                </div>
-                <div class="smile" onclick="profile()"><i class="fa-solid fa-face-smile"></i></div>
-                <button class="send"><i class="fa-solid fa-arrow-up"></i></button>
-            </form>
+        <div class="foot">
+            <div class="recent" onclick="goDown()">
+                최신 메시지로 이동 <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="textbox">
+                <form @submit="setNick">
+                    <div class="nickname">
+                            <input type="text" autocomplete="off" name="nick" placeholder="애칭을 입력해주세요" maxlength="10" :value="nickname" @input="inputNick">
+                    </div>
+                    <div class="smile" onclick="profile()"><i class="fa-solid fa-face-smile"></i></div>
+                    <button class="send"><i class="fa-solid fa-arrow-up"></i></button>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="end"></div>
