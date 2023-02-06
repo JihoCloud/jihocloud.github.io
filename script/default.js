@@ -100,4 +100,4 @@ function profile() {
 
 //footer
 
-document.addEventListener('resize', () => console.log('테스트'));
+document.addEventListener('resize', () => alert('테스트'));
