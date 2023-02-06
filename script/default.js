@@ -96,3 +96,9 @@ function profile() {
         toast.style.display = 'none';
     }
 }
+
+
+//footer
+
+const foot = document.querySelector('.foot');
+window.addEventListener('resize', () => foot.innerHTML = foot.innerHTML);
