@@ -101,4 +101,4 @@ function profile() {
 //footer
 
 const footer = document.querySelector('.foot');
-window.addEventListener('resize', () => console.log('test'));
+window.addEventListener('resize', () => alert('test'));
