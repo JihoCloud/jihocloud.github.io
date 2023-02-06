@@ -100,5 +100,4 @@ function profile() {
 
 //footer
 
-const sub = document.querySelector('.sub');
 document.addEventListener('resize', () => console.log('테스트'));
