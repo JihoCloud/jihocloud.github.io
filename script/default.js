@@ -101,4 +101,4 @@ function profile() {
 //footer
 
 const footer = document.querySelector('.foot');
-document.addEventListener('scroll', () => alert('테스트'));
+document.addEventListener('scroll', () => footer.innerHTML = footer.innerHTML);
