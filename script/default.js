@@ -100,5 +100,5 @@ function profile() {
 
 //footer
 
-const footer = document.querySelector('.foot');
-document.addEventListener('resize', () => document.innerHTML = document.innerHTML);
+const sub = document.querySelector('.sub');
+document.addEventListener('resize', () => sub.innerHTML = sub.innerHTML);
