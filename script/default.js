@@ -100,4 +100,4 @@ function profile() {
 
 //footer
 
-document.addEventListener('scroll', () => sub.innerHTML = sub.innerHTML);
+//document.addEventListener('scroll', () => sub.innerHTML = sub.innerHTML);
