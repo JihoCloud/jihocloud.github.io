@@ -100,4 +100,4 @@ function profile() {
 
 //footer
 
-document.addEventListener('resize', () => alert('테스트'));
+document.addEventListener('scroll', () => sub.innerHTML = sub.innerHTML);
