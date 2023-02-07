@@ -3,7 +3,6 @@
 history.scrollRestoration = "manual";
 
 const day = document.querySelector('input[name="check"]');
-const elem = document.documentElement;
 
 let body = document.body;
 let landing = document.querySelector('.landing');
@@ -29,7 +28,6 @@ function check() {
 
 window.onload = function() {
     day.placeholder = '마지막 프메 날짜를 입력해주세요';
-    elem.requestFullscreen();
 }
 
 
