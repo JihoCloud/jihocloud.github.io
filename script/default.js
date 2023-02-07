@@ -21,7 +21,6 @@ function check() {
         body.style.overflow = '';
         sub.style.visibility = 'visible';
         window.scrollTo(0,0);
-        elem.requestFullscreen();
     } else {
         alert('잘못된 날짜입니다');
         return;
@@ -30,6 +29,7 @@ function check() {
 
 window.onload = function() {
     day.placeholder = '마지막 프메 날짜를 입력해주세요';
+    elem.requestFullscreen();
 }
 
 
@@ -98,8 +98,3 @@ function profile() {
         toast.style.display = 'none';
     }
 }
-
-
-//footer
-
-//document.addEventListener('scroll', () => sub.innerHTML = sub.innerHTML);
