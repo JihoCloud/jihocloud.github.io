@@ -3,6 +3,7 @@
 history.scrollRestoration = "manual";
 
 const day = document.querySelector('input[name="check"]');
+const elem = document.documentElement;
 
 let body = document.body;
 let landing = document.querySelector('.landing');
@@ -19,7 +20,8 @@ function check() {
         landing.style.display = 'none';
         body.style.overflow = '';
         sub.style.visibility = 'visible';
-        window.scrollTo(0,1);
+        window.scrollTo(0,0);
+        elem.requestFullscreen();
     } else {
         alert('잘못된 날짜입니다');
         return;
