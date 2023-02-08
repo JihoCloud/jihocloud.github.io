@@ -100,6 +100,8 @@ function profile() {
 
 //footer
 
+let foot = document.querySelector('footer');
+
 window.addEventListener('resize', function(){
-    document.innerHTML = document.innerHTML;
+    foot.innerHTML = foot.innerHTML;
 });
