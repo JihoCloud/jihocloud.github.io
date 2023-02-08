@@ -96,3 +96,12 @@ function profile() {
         toast.style.display = 'none';
     }
 }
+
+
+//footer
+
+const foot = document.querySelector('footer');
+
+window.addEventListener('resize', function(){
+    foot.innerHTML = foot.innerHTML
+});
