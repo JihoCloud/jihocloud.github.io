@@ -103,5 +103,6 @@ function profile() {
 const foot = document.querySelector('footer');
 
 window.addEventListener('resize', function(){
-    foot.innerHTML = foot.innerHTML
+    foot.innerHTML = foot.innerHTML;
+    alert('test');
 });
