@@ -99,11 +99,3 @@ function profile() {
 
 
 //footer
-
-window.addEventListener('resize', function() {
-    var elements = document.querySelectorAll('footer');
-    elements.forEach(function(element) {
-        var topOffset = element.getBoundingClientRect().top;
-        element.style.top = topOffset + 'px';
-    });
-});
