@@ -100,7 +100,10 @@ function profile() {
 
 //footer
 
-// window.addEventListener('resize', function(){
-//    let foot = document.querySelector('footer');
-//    foot.style.height = 'calc(10vh - 140px)';
-// });
+window.addEventListener('resize', function() {
+      var elements = document.querySelectorAll('footer');
+      elements.forEach(function(element) {
+        var topOffset = element.getBoundingClientRect().top;
+        element.style.top = topOffset + 'px';
+      });
+});
