@@ -20,23 +20,22 @@ input[type="number"] {-moz-appearance: textfield;}
 
 /*html, body {padding: 0; margin: 0; height: 100%; font-family: sans-serif; -ms-overflow-style: none; position: relative; background: var(--back-color); -ms-overflow-style: none; -webkit-tap-highlight-color: rgba(0,0,0,0);}*/
 
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
+html, body {
   padding: 0;
+  margin: 0;
+  height: 100%;
   font-family: sans-serif;
   -ms-overflow-style: none;
   position: relative;
   background: var(--back-color);
+  -ms-overflow-style: none;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
   height: 100vh;
   overflow-y: auto;
 }
-
-body {height: 100vh; overflow-y: auto;}
 
 .sub {width: 100%; height: auto; max-width: 500px; color: var(--white); position: absolute; left: 50%; transform: translateX(-50%);}
 
@@ -70,12 +69,12 @@ section {min-height: 60px; width: 100%;}
 
 footer {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   height: calc(10vh - 140px);
   position: sticky;
   bottom: 0;
+  margin-top: auto;
+  background-color: var(--black);
+  z-index: 100;
 }
 
 /*.foot {width: 100%; height: 60px; max-width: 500px; display: flex; position: absolute; bottom: -0.5px; background: var(--black); z-index: 100;}*/
@@ -86,19 +85,79 @@ footer {
   max-width: 500px;
   display: flex;
   background: var(--black);
-  z-index: 100;
 }
 
-.recent {width: 150px; height: 20px; text-align: center; background: var(--black); border-radius: 20px; font-size: 13px; color: var(--blue-text);  padding: 5px; position: absolute; bottom: 75px; left: calc(50% - 75px); cursor: pointer; line-height: 20px;}
+/*.recent {width: 150px; height: 20px; text-align: center; background: var(--black); border-radius: 20px; font-size: 13px; color: var(--blue-text);  padding: 5px; position: absolute; bottom: 75px; left: calc(50% - 75px); cursor: pointer; line-height: 20px;}
 .textbox {border: 1px solid var(--gray-text); height: 40px; border-radius: 20px; width: calc(100% - 40px); margin: 10px 0 0 20px;}
 .nickname {display: inline-block; width: calc(100% - 80px); line-height: 38px; margin-left: 10px;}
-.nickname > input {width: 98%; height: 30px; background: transparent; border: 0; color: var(--white); font-size: 13px; font-weight: bold; padding: 0;}
+.nickname > input {width: 98%; height: 30px; background: transparent; border: 0; color: var(--white); font-size: 13px; font-weight: bold; padding: 0;}*/
+
+.foot .recent {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.foot .textbox {
+  flex: 8;
+  display: flex;
+  align-items: center;
+}
+
+.foot .textbox form {
+  display: flex;
+  width: 100%;
+}
+
+.foot .textbox form .nickname {
+  flex: 5;
+  padding-left: 10px;
+}
+
+.foot .textbox form .nickname input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-size: 14px;
+  background-color: var(--gray);
+  color: var(--white);
+}
+
+.foot .textbox form .smile {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.foot .textbox form .send {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
 .nickname > input:disabled {color: var(--gray-text);}
 .nickname > input::placeholder {color: var(--gray-text);}
 .nickname > input:focus::placeholder {color: transparent;}
-.send {display: inline-block; width: 30px; height: 30px; background: var(--point-color); text-align: center; border-radius: 30px; cursor: pointer; color: var(--white); border: 0; margin-left: 5px; line-height: 30px;}
+/*.send {display: inline-block; width: 30px; height: 30px; background: var(--point-color); text-align: center; border-radius: 30px; cursor: pointer; color: var(--white); border: 0; margin-left: 5px; line-height: 30px;}*/
 .send:disabled {background: var(--back-color); color: var(--gray-text); cursor: auto;}
-.smile {display: inline-block; width: 30px; height: 30px; margin: 0; padding: 0; color: var(--blue-text); font-size: 16px; line-height: 30px; text-align: center; cursor: pointer;}
+/*.smile {display: inline-block; width: 30px; height: 30px; margin: 0; padding: 0; color: var(--blue-text); font-size: 16px; line-height: 30px; text-align: center; cursor: pointer;}*/
 
 /* search */
 .search {width: 100%; height: 300px; max-width: 500px; background: var(--black); z-index: 200; position: -webkit-sticky; position: sticky; top: 59px; border-radius: 0 0 20px 20px;}
