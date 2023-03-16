@@ -99,20 +99,3 @@ function profile() {
 
 
 //footer
-
-function enterFullscreen() {
-  var elem = document.documentElement;
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) {
-    /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) {
-    /* IE11 */
-    elem.msRequestFullscreen();
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function(event) {
-  enterFullscreen();
-});
