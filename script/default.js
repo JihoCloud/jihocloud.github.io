@@ -99,3 +99,9 @@ function profile() {
 
 
 //footer
+
+let foot = document.querySelector('footer');
+let parentHeight = sub.getBoundingClientRect().height;
+
+sub.style.height = parentHeight + 'px';
+foot.style.position = 'sticky';
