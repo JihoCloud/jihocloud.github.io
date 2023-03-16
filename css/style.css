@@ -18,7 +18,7 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
 input[type="number"] {-moz-appearance: textfield;}
 
-html, body {padding: 0; margin: 0; height: 100%; font-family: sans-serif; -ms-overflow-style: none; position: relative; background: var(--back-color); -ms-overflow-style: none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+html, body {padding: 0; margin: 0; height: 100vh; width: 100vh; font-family: sans-serif; -ms-overflow-style: none; position: relative; background: var(--back-color); -ms-overflow-style: none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
 
 .sub {width: 100%; height: auto; max-width: 500px; color: var(--white); position: absolute; left: 50%; transform: translateX(-50%);}
 
